@@ -3,6 +3,10 @@ import { MainLayout } from "./layout/main-layout";
 import { nanoid } from "nanoid";
 import { main_pages } from "./router/main-router";
 
+// About
+import { About } from "./pages/about";
+// About end
+
 function App() {
   return (
     <>
