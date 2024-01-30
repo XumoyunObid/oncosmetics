@@ -4,8 +4,10 @@ import { SearchIcon } from "../../../../assets/search-icon";
 export const HeaderButtons = () => {
   return (
     <div>
-      HeaderButtons
+      <a href="" className="link">
+
       <SearchIcon />
+      </a>
     </div>
   );
 };

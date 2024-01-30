@@ -20,3 +20,6 @@
   align-items: center;
   justify-content: space-between;
 }
+ul, ol {
+  list-style: none;
+}
