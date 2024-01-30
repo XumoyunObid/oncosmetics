@@ -8,14 +8,16 @@ export const Header = () => {
   return (
     <header>
       <div className="container box">
-        <Link to={'/'}>
+        <Link to={"/"}>
           <Logo />
         </Link>
-        <ul>
+        <ul className="header-list">
           {links.map((item) => (
-            <Link key={item.path} to={item.path}>
-              {item.name}
-            </Link>
+            <li>
+              <Link key={item.path} to={item.path}>
+                {item.name}
+              </Link>
+            </li>
           ))}
         </ul>
         <HeaderButtons />

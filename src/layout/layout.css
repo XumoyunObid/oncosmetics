@@ -23,3 +23,10 @@
 ul, ol {
   list-style: none;
 }
+.header-list {
+  display: flex;
+  gap: 20px;
+}
+.header-list  li Link{
+  text-decoration: none;
+}
