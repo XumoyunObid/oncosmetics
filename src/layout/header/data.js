@@ -11,8 +11,4 @@ export const links = [
     name: "Products",
     path: "/products",
   },
-  {
-    name: "User",
-    path: "/user",
-  },
 ];

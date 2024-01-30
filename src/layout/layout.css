@@ -20,14 +20,3 @@
   align-items: center;
   justify-content: space-between;
 }
-
-.layout__block {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-
-}
-
-.layout__item {
-  border: 2px solid red;
-  height: 72vh;
-}
