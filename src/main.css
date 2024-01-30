@@ -1,8 +1,10 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+font-family: Roboto;
 }
+
+
 
 ul,
 ol {
@@ -16,5 +18,65 @@ ol {
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
+}
+
+
+/* About */
+.join-container {
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.44rem;
+}
+.join-text1 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
+.join-text2 {
+  margin: 2rem auto;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.join-btn {
+  width: 90px;
+  height: 31.125px;
+  background-color: #FFF;
+  color: #000;
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.04463rem;
+  letter-spacing: 0.02569rem;
+}
+/* About end */
+
+/* Brand page */
+
+.header-img {
+  width: 100%;
+}
+
+.d-flex{
+  position: absolute;
+  top: 30%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.header-p{
+  width: 60%;
 
 }
+/* Brand page end */
