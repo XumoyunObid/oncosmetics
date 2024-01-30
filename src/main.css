@@ -1,13 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
 }
 
-a { text-decoration: none; }
-a, button { cursor: pointer; }
-ul, ol { list-style: none; }
-img { object-fit: contain; }
+
+
+ul,
+ol {
+  list-style: none;
+}
 
 .container {
   max-width: 1200px;
@@ -17,6 +19,7 @@ img { object-fit: contain; }
   padding-right: 20px;
   width: 100%;
 }
+
 
 /* About */
 .join-container {
@@ -57,3 +60,23 @@ img { object-fit: contain; }
   letter-spacing: 0.02569rem;
 }
 /* About end */
+
+/* Brand page */
+
+.header-img {
+  width: 100%;
+}
+
+.d-flex{
+  position: absolute;
+  top: 30%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.header-p{
+  width: 60%;
+
+}
+/* Brand page end */
