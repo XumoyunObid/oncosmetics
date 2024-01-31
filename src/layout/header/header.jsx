@@ -14,7 +14,7 @@ export const Header = () => {
         <ul className="header-list">
           {links.map((item) => (
             <li>
-              <Link key={item.path} to={item.path}>
+              <Link className="Link" key={item.path} to={item.path}>
                 {item.name}
               </Link>
             </li>
