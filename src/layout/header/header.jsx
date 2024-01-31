@@ -1,7 +1,7 @@
 import React from "react";
 import { Logo } from "../../assets/logo";
 import { links } from "./data";
-import { HeaderButtons } from "./components/header-buttons/header-buttons";
+import { HeaderButtons } from "./components/header-buttons";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
