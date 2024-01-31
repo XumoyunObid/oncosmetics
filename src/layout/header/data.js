@@ -21,6 +21,6 @@ export const links = [
   },
   {
     name: "Where to buy",
-    path: "/wheretobuy",
+    path: "/buy",
   },
 ];
