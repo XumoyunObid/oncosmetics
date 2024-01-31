@@ -9,7 +9,7 @@ export const main_pages = [
   },
   {
     component: <About />,
-    path: "about",
+    path: "AboutUs",
   },
   {
     component: <Products />,

@@ -8,7 +8,7 @@ import cardImg_3 from '../../assets/about-img/aboutCard-img-3.svg'
 import cards_img_1 from '../../assets/about-img/cards-img-1.svg'
 import cards_img_2 from '../../assets/about-img/cards-img-2.svg'
 import whatsappImg from '../../assets/about-img/whatsapp.svg'
-import aboutHero from '../../assets/about-img/aboutHero.svg'
+// import aboutHero from '../../assets/about-img/aboutHero.svg'
 
 const AboutCard = ({ img, title, text }) => {
   try {
@@ -25,7 +25,7 @@ const AboutCard = ({ img, title, text }) => {
 
 export const About = () => {
   try {
-    return <section id="aboutUs" className="about-container">
+    return <section className="about-container">
       <div className="about-hero">
       </div>
       <div className="aboutCards-div">
