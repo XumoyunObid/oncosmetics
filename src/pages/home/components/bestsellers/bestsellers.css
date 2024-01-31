@@ -1,0 +1,28 @@
+.bestsellers {
+  height: 70vh;
+}
+
+.bestsellers-wrapper {
+  padding-block: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.bestsellers-title {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.bestsellers-cards {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+

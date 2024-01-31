@@ -3,7 +3,7 @@ import { MainLayout } from "./layout/main-layout";
 import { nanoid } from "nanoid";
 import { main_pages } from "./router/main-router";
 
-import { About } from "./pages/about";
+// import { About } from "./pages/about";
 
 function App() {
   return (
@@ -19,7 +19,6 @@ function App() {
             />
           ))}
         </Route>
-        <Route path="/AboutUs" element={<About />} />
       </Routes>
     </>
   );
