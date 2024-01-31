@@ -1,0 +1,36 @@
+.instagram {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  width: 100%;
+}
+
+.instagram-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.instagram-title {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; 
+  display: flex;
+  align-items: center;
+}
+
+.instagram-imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+
+.girlFace {
+  grid-row: span 2;
+}

@@ -2,6 +2,7 @@ import { Products } from "../pages/products";
 import { About } from "../pages/about";
 import { Home } from "../pages/home";
 import Brand from "../pages/brand/brand";
+import Contact from "../pages/contact/contact";
 
 export const main_pages = [
   {
@@ -9,7 +10,7 @@ export const main_pages = [
   },
   {
     component: <About />,
-    path: "AboutUs",
+    path: "about",
   },
   {
     component: <Products />,
@@ -18,5 +19,9 @@ export const main_pages = [
   {
     component: <Brand/>,
     path: "brand"
+  },
+  {
+    component: <Contact/>,
+    path: "contact"
   }
 ];
