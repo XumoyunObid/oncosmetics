@@ -7,20 +7,24 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <header>
-      <div className="container box">
-        <Link to={"/"}>
-          <Logo />
-        </Link>
-        <ul className="header-list">
-          {links.map((item) => (
-            <li>
-              <Link className="Link" key={item.path} to={item.path}>
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <HeaderButtons />
+      <div className="header-main">
+        <div className="container">
+          <div className="box">
+            <Link to={"/"}>
+              <Logo />
+            </Link>
+            <ul className="header-list">
+              {links.map((item) => (
+                <li>
+                  <Link className="Link" key={item.path} to={item.path}>
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <HeaderButtons />
+          </div>
+        </div>
       </div>
     </header>
   );

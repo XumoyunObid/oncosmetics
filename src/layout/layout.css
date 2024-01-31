@@ -9,9 +9,9 @@
 .Logo {
   color: white;
 }
-
 .box {
   display: flex;
+  width: 80%;
   align-items: center;
   justify-content: space-between;
   position: absolute;
