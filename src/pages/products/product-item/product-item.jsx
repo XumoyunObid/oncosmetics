@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import "./product-item.css";
 import img1 from "../../../assets/product-img/up-icon.svg"
+import Cards from '../../about/components/cards/cards';
+
 
 export const Productitem = () => {
     let [button, setButton] = useState(false)
@@ -91,7 +93,20 @@ export const Productitem = () => {
                 <br />
             </div>
           </div>
-          <div className="product_info_block2"></div>
+          <div className="product_info_block2">
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+          </div>
         </div>
       </div>
     </div>
