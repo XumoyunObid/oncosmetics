@@ -1,10 +1,14 @@
-
+import FaqBanner from "./banner/FaqBanner"
 
 const Questions = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <section>
+        <div>
+          <FaqBanner/>
+        </div>
+      </section>
+    </>
   )
 }
 

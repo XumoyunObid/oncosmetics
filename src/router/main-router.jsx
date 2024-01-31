@@ -3,6 +3,7 @@ import { About } from "../pages/about";
 import { Home } from "../pages/home";
 import Brand from "../pages/brand/brand";
 import Contact from "../pages/contact/contact";
+import Questions from "../pages/faq/Questions";
 
 export const main_pages = [
   {
@@ -19,6 +20,10 @@ export const main_pages = [
   {
     component: <Brand/>,
     path: "brand"
+  },
+  {
+    component: <Questions/>,
+    path: "questions"
   },
   {
     component: <Contact/>,
