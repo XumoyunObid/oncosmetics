@@ -11,7 +11,7 @@ export const main_pages = [
   },
   {
     component: <About />,
-    path: "AboutUs",
+    path: "about",
   },
   {
     component: <Products />,
