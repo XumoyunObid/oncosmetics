@@ -2,12 +2,12 @@ import "./banner.css"
 
 export const Banner = () => {
   return <section className="showcase">
-    <div>
-      <h1>Discover summer promotions</h1>
-      <p>Free sample and free shipping when you spend $50</p>
-      <div>
-        <button>Skincare</button>
-        <button>Shop All</button>
+    <div className="banner">
+      <h1 className="banner-title">Discover summer promotions</h1>
+      <p className="banner-text">Free sample and free shipping when you spend $50</p>
+      <div className="banner-btns">
+        <button className="skincareBtn">Skincare</button>
+        <button className="shopBtn">Shop All</button>
       </div>
     </div>
   </section>;
