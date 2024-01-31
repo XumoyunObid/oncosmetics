@@ -1,9 +1,139 @@
 /* About */
 .about-container {
-  width: 75rem;
+  width: 100%;
   margin: 0 auto;
+  position: relative;
 }
+/* About Hero */
 
+/* About Hero end */
+/* About Card */
+.aboutCards-div {
+  padding: 3rem 0 7.7rem;
+}
+.aboutCards-div-1 {
+  padding-bottom: 3.3rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 12.25rem;
+}
+.impressum {
+  padding: 1.5rem 0;
+}
+.a-link {
+  color: #00F;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+.sevn-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.telefonNumber {
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+}
+.aboutCards-div-2 {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 12rem;
+}
+.div-2-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.about-cards {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.aboutCards-div-2-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards_img_2 {
+  margin-right: 19.8rem;
+  margin-top: 17rem;
+  position: absolute;
+}
+.cards-img_1 {
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FCF3F6;
+}
+.cards-text1 {
+  width: 9.3125rem;
+  margin-bottom: 1rem;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.36606rem;
+}
+.cards-text2 {
+  width: 13.5625rem;
+  color: #000;
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.20538rem;
+}
+/* About Card end */
+/* From founder */
+.founder-container {
+  width: 100%;
+  padding: 4.6rem 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.6rem;
+  background: #FCF3F6;
+}
+.founder-text1 {
+  width: 10.75rem;color: #000;
+  font-family: Roboto;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
+.founder-text2 {
+  width: 20.625rem;
+  margin: 1rem 0 1.5rem;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.36606rem;
+}
+.founder-text3 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.04463rem;
+}
+/* From founder end */
 .ourMission-div {
   width: 100%;
   margin: 0 auto;
@@ -31,7 +161,54 @@
   font-weight: 400;
   line-height: 1.75rem;
 }
-
+/* Discover Our Products */
+.discover-div {
+  width: 1519px;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: no-repeat url(../../assets/about-img/discover.svg) 0 0 / 100% 100%;
+}
+.discover-title {
+  width: 17.25rem;
+  margin: 0 auto;
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
+.discover-text {
+  width: 25.3125rem;
+  /* height: 2.75rem; */
+  margin: 1.33rem auto 1rem;
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.36606rem;
+}
+.discover-btn {
+  width: 5.875rem;
+  height: 2.25rem;
+  margin-top: 2rem;
+  flex-shrink: 0;
+  border: 0.643px solid #000;
+  color: #000;
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 0.02569rem;
+}
+/* Discover Our Products end */
 .join-container {
   width: 100%;
   padding: 4rem 0;
@@ -70,13 +247,10 @@
   letter-spacing: 0.02569rem;
 }
 /* About end */
-
 /* Brand page */
-
 .header-img {
   width: 100%;
 }
-
 .d-flex{
   position: absolute;
   top: 30%;
@@ -84,7 +258,6 @@
   gap: 2rem;
   flex-direction: column;
 }
-
 .header-p{
   width: 60%;
 }
