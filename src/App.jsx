@@ -18,8 +18,8 @@ function App() {
               element={route.component}
             />
           ))}
-        </Route>
         <Route path="/AboutUs" element={<About />} />
+        </Route>
       </Routes>
     </>
   );
