@@ -5,7 +5,7 @@ import MainImg from "../../assets/brand/main-img1.png";
 import youtube from "../../assets/brand/youtube.svg";
 import sectionImg from "../../assets/brand/section-img.svg";
 import { Link } from "react-router-dom";
-import WhatsApp from '../../assets/brand/whatsApp.svg'
+import Address from "../../components/address";
 
 function Brand() {
   return (
@@ -109,7 +109,7 @@ function Brand() {
               </li>
             </ul>
           </div>
-          <div className="brand-tel-layout">
+          {/* <div className="brand-tel-layout">
             <h5>Adresse:</h5>
             <p>
               <Link to="#">Kaiser-Friedrich-Strasse 19, 10585 Berlin</Link>
@@ -126,7 +126,8 @@ function Brand() {
               <img src={WhatsApp} alt="" />
               <span>+49 157 381 811 78</span>
             </div>
-          </div>
+          </div> */}
+          <Address />
         </div>
       </section>
     </div>
