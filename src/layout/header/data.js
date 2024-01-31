@@ -9,23 +9,18 @@ export const links = [
   },
   {
     name: "About Us",
-    path: "/AboutUs",
+    path: "/about",
   },
   {
     name: "FAQ",
-    path: "/FAQ ",
+    path: "/questions",
   },
   {
     name: "Contact",
-    path: "/Contact",
+    path: "/contact",
   },
   {
     name: "Where to buy",
-    path: "/Wheretobuy",
+    path: "/wheretobuy",
   },
-{
-  name: "Brand",
-  path: "/brand"
-}
-  
 ];
