@@ -1,4 +1,5 @@
 import React from "react";
+import './about.css'
 import joinImg from '../../assets/about-img/join_team.svg'
 
 export const About = () => {
