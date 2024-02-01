@@ -1,6 +1,8 @@
 import LeftIcon from "../../../../assets/icons/left-icon";
 import "./blogs.css";
 import RightIcon from './../../../../assets/icons/right-icon';
+import { Link } from "react-router-dom";
+import { BlogsPage } from './../../../blogs-page/blogsPage';
 const Blogs = () => {
   return (
     <section className="blogs">
@@ -42,7 +44,7 @@ const Blogs = () => {
           {/* /////////////////////////////// */}
         <RightIcon/>
         </div>
-        <button className="shopBtn">View All Posts</button>
+        <Link to="/blogs" className="shopBtn" >View All Posts</Link>
       </div>
     </section>
   );
