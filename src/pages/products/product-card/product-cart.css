@@ -84,6 +84,7 @@
   line-height: 16px;
   letter-spacing: 0.411px;
   margin-right: 20px;
+  cursor: progress;
 }
 .cart-info-ves1:hover {
   border: solid 2px rgb(15, 15, 15);

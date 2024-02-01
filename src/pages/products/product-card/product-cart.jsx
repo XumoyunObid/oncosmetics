@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom';
 import "./product-cart.css"
 import img2 from "../../../assets/product-img/Rectangle1.png"
@@ -6,6 +6,19 @@ import img2 from "../../../assets/product-img/Rectangle1.png"
 export const ProductCart = () => {
     const { id } = useParams();
     console.log(id);
+
+    const [number, setNumber] = useState(0)
+    const [price, setPrice ] = useState(19)
+
+    const plus = () => {
+    setNumber(number + 1)
+    setPrice(price + 19)
+    }
+
+    const minus = () => {
+      setNumber(number - 1)
+    setPrice(price - 19)
+    }
   return (
     <div className="product-cart">
       <div className="product_card-container">
@@ -19,21 +32,21 @@ export const ProductCart = () => {
           <div className="product-cart-info">
             <h3 className="product-cart-info_title">Eye Cream</h3>
             <span className="cart_info-price">$ 25.00</span>
-            <span className="cart_info-newprice">$19.00</span>
+            <span className="cart_info-newprice">${price}.00</span>
             <p className="cart_info-text">
               A potent anti-oxidant blend formulated with generous doses of
               Vitamins C and E to gently nourish and protect the delicate skin
               surrounding the eyes.
             </p>
             <div className="cart_info-vess">
-              <span className="cart-info-ves1">200 ml</span>
+              <span className="cart-info-ves1" >200 ml</span>
               <span className="cart-info-ves1">500 ml</span>
             </div>
             <div className="product-cart_info-buttons">
               <div className="cart_info-buttons">
-                <button className="decrement">-</button>
-                <p className="cart_info-number">2</p>
-                <button className="increment">+</button>
+                <button className="decrement" onClick={minus}>-</button>
+                <p className="cart_info-number"  >{number}</p>
+                <button className="increment" onClick={plus}>+</button>
               </div>
               <button className="cart_info-add">Add to cart</button>
             </div>

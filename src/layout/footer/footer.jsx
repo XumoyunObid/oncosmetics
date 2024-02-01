@@ -8,6 +8,9 @@ import { Telegramicon } from "../../assets/icons/telegram-icon";
 import { Instaicon } from "../../assets/icons/insta-icon";
 
 export const Footer = () => {
+
+  const now = new Date()
+const years = now.getFullYear()
   return (
     <footer className="main-footer">
       <div className="container footer">
@@ -67,7 +70,7 @@ export const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link className="link" to="/FAQ">
+              <Link className="link" to="/questions">
                 FAQ
               </Link>
             </li>
@@ -87,10 +90,13 @@ export const Footer = () => {
           <h3 className="footer-title">SUBSCRIBE</h3>
           <p className="footer-subs_text">Subscribe now and thank us later</p>
           <div className="footer-subs">
-            <input type="text" name="" id="" />
+            <input type="text" name="" id=""  />
             <button>Subscribe</button>
           </div>
         </div>
+      </div>
+      <div style={{display: "grid", justifyContent: "center", marginTop: "3rem"}}>
+        <span style={{color: "white"}}>© {years} Beauty Store. All rights reserved.</span>
       </div>
     </footer>
   );
