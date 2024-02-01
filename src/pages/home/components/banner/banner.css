@@ -3,7 +3,7 @@
   background-image: url(../../../../assets/home/homeBg.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
+  max-width: 100%;
 }
 
 
