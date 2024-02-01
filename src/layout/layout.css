@@ -16,6 +16,7 @@
   justify-content: space-between;
   position: absolute;
   left: 10%;
+  z-index: 999999;
 }
 ul,
 ol {
@@ -97,5 +98,9 @@ ol {
   padding-block: 14px;
   border: solid 1px white;
   width: 100px;
+}
+
+input{
+  color: white;
 }
 /* footer stiyle end  */

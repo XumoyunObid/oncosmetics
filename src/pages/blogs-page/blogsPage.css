@@ -1,3 +1,130 @@
 /* Blogs Page */
+.blogsPage-container {
+    width: 100%;
+    margin: 8rem auto;
+}
+.blogs-category {
+    width: 1430px;
+    margin: 0 -5rem 1rem;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+.blogs-category li {
+    width: 62px;
+    height: 16px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    color: black;
+}
+.blogs-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+/* Blogs-left-div */
+.bogs-left-img {
+    width: 347px;
+    height: 347px;
+}
+.blogs-left-btn {
+    width: 114px;
+    height: 36px;;
+    border: 0.64px;
+    border: 0.64px solid #000000
+}
+.blogs-left-title {
+    width: 130px;
+    margin: .4rem 0;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blogs-left-easy {
+    width: 308px;
+    height: 72px;
+    margin: .4rem 0;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.blogs-left-weall {
+    width: 324px;
+    height: 58px;
+    margin: .6rem 0 1rem;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+/* .bogs-left-img  img {} */
 
+/* Blogs-right-div */
+.blogs-right-div {
+    width: 400px;
+    padding: 0 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
 /* Blogs Page end */
+
+/* EightCards */
+.blogs-rightCard {
+    width: 167px;
+    height: 293px;
+    margin: .5rem auto;
+    /* box-shadow: 0 0 3px black; */
+}
+.blogs-right-img {
+    width: 164px;
+    height: 218.75px;
+    top: 160px;
+    left: 730px;
+}
+.blogs-right-img img {
+    width: 100%;
+    height: 100%;
+}
+.blogs-right-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 14px;
+    margin: .3rem 0;
+}
+.blogs-right-title p {
+    width: 154px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.1800195425748825px;
+    text-align: center;
+}
+.blogs-right-end-title {
+    width: 154px;
+    height: 40.14px;
+    top: 412.86px;
+    left: 735px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.41147324442863464px;
+    text-align: center;
+}
+/* EightCards end */
