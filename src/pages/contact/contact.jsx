@@ -9,7 +9,7 @@ import Map from "../../assets/contact/contact-map.png";
 function Contact() {
   const navigate = useNavigate();
   const buttonFAQ = () => {
-    navigate("/FAQ");
+    navigate("/questions");
   };
   return (
     <div>
