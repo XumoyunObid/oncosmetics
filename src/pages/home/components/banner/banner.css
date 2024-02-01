@@ -1,9 +1,9 @@
 .showcase {
   height: 100vh;
-  background-image: url(../../../../assets/home/homeBg.png);
-  background-repeat: no-repeat;
+  background: no-repeat url(../../../../assets/home/homeBg.png) 0 0 / 100% 100%;
+  /* background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
+  max-width: 100%; */
 }
 
 
