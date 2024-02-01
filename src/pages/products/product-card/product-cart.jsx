@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import "./product-cart.css";
 import img2 from "../../../assets/product-img/Rectangle1.png";
 
-
 import { data } from "../../../data/data";
 
 export const ProductCart = () => {
@@ -19,15 +18,14 @@ export const ProductCart = () => {
   const plus = () => {
     setNumber(number + 1);
     setPrice(price + product.prices);
-    
   };
 
   const minus = () => {
-   if(number <= 0 || price <= 0) return 0
-   else{
-     setNumber(number - 1);
-     setPrice(price - product.prices);
-   }
+    if (number <= 0 || price <= 0) return 0;
+    else {
+      setNumber(number - 1);
+      setPrice(price - product.prices);
+    }
   };
   return (
     <div className="product-cart">
