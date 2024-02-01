@@ -19,7 +19,12 @@
 /* Blogs Page end */
 
 /* EightCards */
-/* .blogs-rightCard {} */
+.blogs-rightCard {
+    width: 164px;
+    height: 293px;
+    top: 160px;
+    left: 730px;
+}
 /* .blogs-right-img {} */
 /* .blogs-right-title {} */
 /* .blogs-right-title p {} */

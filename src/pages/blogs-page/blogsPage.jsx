@@ -30,11 +30,10 @@ export const BlogsPage = () => {
     try {
         return (
             <section className='blogsPage-container'>
-                
                 <div className="blogs-div">
-                    <div className="blogs-left-div">
+                    {/* <div className="blogs-left-div">
                         <div className="bogs-left-img"> <img src={blogs_leftImg} alt="let image" /> </div>
-                    </div>
+                    </div> */}
                     <div className="blogs-right-div">
                         <EightCards img={img1} text1={'Beauty'} text2={'May 2, 2021'} title={'Some beaty secrets from our editor in chief'} />
                         <EightCards img={img2} text1={'Fragrance'} text2={'May 2, 2021'} title={'Morning beauty routine: our main rules'} />

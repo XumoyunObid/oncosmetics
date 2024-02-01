@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { MainLayout } from "./layout/main-layout";
 import { nanoid } from "nanoid";
 import { main_pages } from "./router/main-router";
-import Blogs from "./pages/home/components/blogs/Blogs";
+import { BlogsPage } from "./pages/blogs-page/blogsPage";
 
 // import { About } from "./pages/about";
 
@@ -19,7 +19,7 @@ function App() {
               element={route.component}
             />
           ))}
-          <Route path="blogs" element={<Blogs />} />
+          <Route path="blogs" element={<BlogsPage />} />
         </Route>
       </Routes>
     </>
