@@ -94,7 +94,7 @@ export const Productitem = () => {
             </div>
           </div>
           <div className="product_info_block2">
-            <Link to="">
+            <Link to="/products/1">
               <Cards />
             </Link>
             <Cards />
