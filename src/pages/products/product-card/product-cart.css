@@ -1,0 +1,129 @@
+.product_card-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.product-cart-grid {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  grid-template-rows: 130px 130px 130px;
+}
+
+.grid-item1,
+.grid-item3,
+.grid-item4 {
+  height: 103px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.grid-item2 {
+  width: 100%;
+  border: 1px solid black;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.product_cart-block {
+  margin-top: 110px;
+  display: flex;
+  gap: 60px;
+}
+.product-cart-info_title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.cart_info-price {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.18px;
+  text-decoration: line-through;
+  margin-bottom: 16px;
+}
+.cart_info-newprice {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.18px;
+}
+.cart_info-text {
+  width: 312px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.286px;
+  letter-spacing: 0.231px;
+  margin-block: 16px;
+}
+.cart-info-ves1 {
+  width: 80px;
+  height: 32px;
+  padding: 8px 12px;
+  border: solid 1px rgb(53, 52, 52);
+  color: #111;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.411px;
+  margin-right: 20px;
+}
+.cart-info-ves1:hover {
+  border: solid 2px rgb(15, 15, 15);
+}
+.product-cart_info-buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: end;
+}
+.cart_info-buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: solid 1px black;
+  padding: 2px 15px;
+}
+.decrement {
+  border: none;
+  background: transparent;
+  font-size: 26px;
+}
+.increment {
+  border: none;
+  background: transparent;
+  font-size: 26px;
+}
+.cart_info-add {
+  width: 108px;
+  height: 36px;
+  flex-shrink: 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.714px;
+  letter-spacing: 0.411px;
+}
