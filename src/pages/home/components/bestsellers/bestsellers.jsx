@@ -3,6 +3,8 @@ import LeftIcon from "./../../../../assets/icons/left-icon";
 import RightIcon from "./../../../../assets/icons/right-icon";
 import Cards from "../../../about/components/cards/cards";
 
+import { data } from './../../../../data/data';
+let num = 0;
 const Bestsellers = () => {
   return (
     <section className="bestsellers">
@@ -10,10 +12,13 @@ const Bestsellers = () => {
         <h1 className="bestsellers-title">Our bestsellers</h1>
         <div className="bestsellers-cards">
           <LeftIcon />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
+          {
+            data.slice(0, 4).map((item) => {
+              if(num <= 4) {
+                return <Cards key={item.id} img={item.url} title={item.title} price={item.price} />
+              }
+            })
+          }
           <RightIcon />
         </div>
         <button className="shopBtn">Shop All</button>

@@ -1,12 +1,12 @@
 import "./cards.css"
-const Cards = () => {
+const Cards = ({img, title, price}) => {
   return (
     <div className='card-wrapper'>
       <div className='card'>
-      
+      <img src={img} alt="" />
       </div>
-      <p className='card-title'>Facial Balancing Gel</p>
-      <p className='card-price'>$45.00-$99.00</p>
+      <p className='card-title'>{title}</p>
+      <p className='card-price'>{price}</p>
     </div>
   )
 }
