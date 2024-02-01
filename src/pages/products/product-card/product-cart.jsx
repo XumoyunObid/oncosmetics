@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import "./product-cart.css";
 import img2 from "../../../assets/product-img/Rectangle1.png";
 
-import { toast } from "react-toastify";
 
 import { data } from "../../../data/data";
 
@@ -20,12 +19,7 @@ export const ProductCart = () => {
   const plus = () => {
     setNumber(number + 1);
     setPrice(price + 19);
-    if ((number = 5)) {
-      return toast("Maximal 5ta buyurtma berishingiz mumkin", {
-        type: "info",
-        theme: "colored",
-      });
-    }
+  
   };
 
   const minus = () => {
