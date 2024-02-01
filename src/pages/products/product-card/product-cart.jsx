@@ -19,7 +19,12 @@ export const ProductCart = () => {
   const plus = () => {
     setNumber(number + 1);
     setPrice(price + 19);
-  
+    if ((number = 5)) {
+      return toast("Maximal 5ta buyurtma berishingiz mumkin", {
+        type: "info",
+        theme: "colored",
+      });
+    }
   };
 
   const minus = () => {

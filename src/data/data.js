@@ -27,7 +27,7 @@ export const data = [
     id: 4,
     url: img4,
     title: "Eye Cream",
-    price: "$25.00 $19.00"
+    price: "$19.00"
   },
   {
     id: 5,
