@@ -1,0 +1,49 @@
+.faq-form {
+  padding-block: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid gray;
+}
+
+.faq-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.faq-form-title {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.faq-form-text {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 10.929px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.286px; 
+  letter-spacing: 0.129px;
+}
+
+.faq-form-input input {
+  padding-block: 14px;
+  background: transparent;
+  border: solid 1px black;
+  width: 260px;
+}
+.faq-form-input button {
+  color: black;
+  background: transparent;
+  padding-block: 14px;
+  border: solid 1px black;
+  width: 100px;
+}

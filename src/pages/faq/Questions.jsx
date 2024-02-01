@@ -1,4 +1,6 @@
 import FaqBanner from "./banner/FaqBanner"
+import FaqFrom from "./faqform/FaqFrom"
+import FaqInfo from "./info/FaqInfo"
 import FaqNav from "./navlist/FaqNav"
 
 const Questions = () => {
@@ -8,6 +10,8 @@ const Questions = () => {
         <div>
           <FaqBanner/>
           <FaqNav/>
+          <FaqInfo/>
+          <FaqFrom/>
         </div>
       </section>
     </>
