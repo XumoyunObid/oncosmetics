@@ -89,10 +89,10 @@ const years = now.getFullYear()
         <div>
           <h3 className="footer-title">SUBSCRIBE</h3>
           <p className="footer-subs_text">Subscribe now and thank us later</p>
-          <div className="footer-subs">
-            <input className="footer-input" type="text" name="" id=""  />
+          <form className="footer-subs">
+            <input className="footer-input" type="text" placeholder="Your username" name="" id="" style={{paddingLeft: "10px"}}  />
             <button>Subscribe</button>
-          </div>
+          </form>
         </div>
       </div>
       <div style={{display: "grid", justifyContent: "center", marginTop: "3rem"}}>
