@@ -30,12 +30,37 @@ export const BlogsPage = () => {
     try {
         return (
             <section className='blogsPage-container'>
+                <ul className="blogs-category">
+                    <li> <a href="">All Articles</a> </li>
+                    <li> <a href="">Beauty</a> </li>
+                    <li> <a href="">Fragrance</a> </li>
+                    <li> <a href="">Hair</a> </li>
+                    <li> <a href="">Makeup</a> </li>
+                    <li> <a href="">Skin</a> </li>
+                    <li> <a href="">Wellness</a> </li>
+                </ul>
                 <div className="blogs-div">
-                    {/* <div className="blogs-left-div">
+                    <div className="blogs-left-div">
                         <div className="bogs-left-img"> <img src={blogs_leftImg} alt="let image" /> </div>
-                    </div> */}
+                        <div className="blogs-left-title">
+                            <p>Fragrance</p>
+                            <p>May 2, 2021</p>
+                        </div>
+                        <h3 className='blogs-left-easy'>Easy affordable make <br /> up look</h3>
+                        <p className='blogs-left-weall'>
+                            We all have different hair typess and have to <br />
+                            choose haircare products according to it. But still <br />
+                            there are some tips that are applicable.
+                        </p>
+                        <button className='blogs-left-btn'>Read Article</button>
+                    </div>
                     <div className="blogs-right-div">
                         <EightCards img={img1} text1={'Beauty'} text2={'May 2, 2021'} title={'Some beaty secrets from our editor in chief'} />
+                        <EightCards img={img2} text1={'Fragrance'} text2={'May 2, 2021'} title={'Morning beauty routine: our main rules'} />
+                        <EightCards img={img3} text1={'Beauty'} text2={'May 2, 2021'} title={'Organic ingredients: do they even work?'} />
+                        <EightCards img={img1} text1={'Beauty'} text2={'May 2, 2021'} title={'Some beaty secrets from our editor in chief'} />
+                        <EightCards img={img2} text1={'Fragrance'} text2={'May 2, 2021'} title={'Morning beauty routine: our main rules'} />
+                        <EightCards img={img3} text1={'Beauty'} text2={'May 2, 2021'} title={'Organic ingredients: do they even work?'} />
                         <EightCards img={img2} text1={'Fragrance'} text2={'May 2, 2021'} title={'Morning beauty routine: our main rules'} />
                         <EightCards img={img3} text1={'Beauty'} text2={'May 2, 2021'} title={'Organic ingredients: do they even work?'} />
                     </div>
