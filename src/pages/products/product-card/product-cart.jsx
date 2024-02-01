@@ -14,17 +14,20 @@ export const ProductCart = () => {
 
   const [number, setNumber] = useState(1);
 
-  const [price, setPrice] = useState(19);
-
+  const [price, setPrice] = useState(product.prices);
+  console.log(product.prices);
   const plus = () => {
     setNumber(number + 1);
-    setPrice(price + 19);
-  
+    setPrice(price + product.prices);
+    
   };
 
   const minus = () => {
-    setNumber(number - 1);
-    setPrice(price - 19);
+   if(number <= 0 || price <= 0) return 0
+   else{
+     setNumber(number - 1);
+     setPrice(price - product.prices);
+   }
   };
   return (
     <div className="product-cart">
@@ -68,7 +71,7 @@ export const ProductCart = () => {
                   </div>
                   <button className="cart_info-add">Add to cart</button>
                 </div>
-                <small>${price}.00</small>
+                <small>${price}</small>
                 <p className="cart_info-text">Tags:fragrance, skincare</p>
                 <h4>Description</h4>
                 <p className="cart_info-text">
