@@ -1,0 +1,13 @@
+.buy-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 5rem 4rem;
+}
+
+.buy-map{
+  width: 500px;
+height: 373px;
+flex-shrink: 0;
+}
