@@ -35,12 +35,12 @@ const years = now.getFullYear()
               </Link>
             </li>
             <li>
-              <Link className="link" to="/Brand">
+              <Link className="link" to="/brand">
                 Brand
               </Link>
             </li>
             <li>
-              <Link className="link" to="/AboutUs">
+              <Link className="link" to="/about">
                 About Us
               </Link>
             </li>
@@ -50,7 +50,7 @@ const years = now.getFullYear()
               </Link>
             </li>
             <li>
-              <Link className="link" to="/Wheretobuy">
+              <Link className="link" to="/buy">
                 Where to buy
               </Link>
             </li>
