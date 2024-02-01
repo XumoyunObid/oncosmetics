@@ -81,6 +81,7 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 .product_info_block1-title {
   font-family: Roboto;

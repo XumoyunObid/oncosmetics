@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 import { useParams } from 'react-router-dom';
 import "./product-cart.css"
 import img2 from "../../../assets/product-img/Rectangle1.png"
+import { data } from '../../../data/data';
 
 export const ProductCart = () => {
     const { id } = useParams();
     console.log(id);
+
+    const product = data.find(product => product.id === parseInt(id));
 
     const [number, setNumber] = useState(0)
     const [price, setPrice ] = useState(19)
@@ -23,16 +26,19 @@ export const ProductCart = () => {
     <div className="product-cart">
       <div className="product_card-container">
         <div className="product_cart-block">
-          <div className="product-cart-grid">
-            <img className="grid-item1" src={img2} alt="" />
-            <img className="grid-item2" src={img2} alt="" />
-            <img className="grid-item3" src={img2} alt="" />
-            <img className="grid-item4" src={img2} alt="" />
+          {
+            product ? (
+              <>
+              <div className="product-cart-grid">
+            <img className="grid-item1" src={product.url} alt="" />
+            <img className="grid-item2" src={product.url} alt="" />
+            <img className="grid-item3" src={product.url} alt="" />
+            <img className="grid-item4" src={product.url} alt="" />
           </div>
           <div className="product-cart-info">
-            <h3 className="product-cart-info_title">Eye Cream</h3>
-            <span className="cart_info-price">$ 25.00</span>
-            <span className="cart_info-newprice">${price}.00</span>
+            <h3 className="product-cart-info_title">{product.title}</h3>
+            {/* <span className="cart_info-price">$ 25.00</span> */}
+            <span className="cart_info-newprice">{product.price}</span>
             <p className="cart_info-text">
               A potent anti-oxidant blend formulated with generous doses of
               Vitamins C and E to gently nourish and protect the delicate skin
@@ -61,6 +67,11 @@ export const ProductCart = () => {
               once.
             </p>
           </div>
+          </>
+            ) : (
+              <p>Product not found ...</p>
+            )
+          }
         </div>
       </div>
     </div>
