@@ -6,7 +6,12 @@
 
 /* Blogs-left-div */
 /* .blogs-left-div {} */
-/* .bogs-left-img {} */
+.bogs-left-img {
+    width: 347px;
+    height: 347px;
+    top: 161px;
+    left: 362px;
+}
 /* .bogs-left-img  img {} */
 
 /* Blogs-right-div */
