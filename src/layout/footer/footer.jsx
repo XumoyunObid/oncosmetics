@@ -90,7 +90,7 @@ const years = now.getFullYear()
           <h3 className="footer-title">SUBSCRIBE</h3>
           <p className="footer-subs_text">Subscribe now and thank us later</p>
           <div className="footer-subs">
-            <input type="text" name="" id=""  />
+            <input className="footer-input" type="text" name="" id=""  />
             <button>Subscribe</button>
           </div>
         </div>
