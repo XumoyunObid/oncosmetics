@@ -36,43 +36,43 @@ export const data = [
     price: "$54.00"
   },
   {
-    id: 1,
+    id: 6,
     url: img1,
     title: "Facial Balancing Gel",
     price: "$45.00 - $99.00"
   },
   {
-    id: 2,
+    id: 7,
     url: img2,
     title: "Post-Shave Lotion",
     price: "$54.00"
   },
   {
-    id: 3,
+    id: 8,
     url: img3,
     title: "Facial Balancing Gel",
     price: "$25.00"
   },
   {
-    id: 4,
+    id: 9,
     url: img4,
     title: "Eye Cream",
     price: "$25.00 $19.00"
   },
   {
-    id: 5,
+    id: 10,
     url: img5,
     title: "Post-Shave Lotion",
     price: "$54.00"
   },
   {
-    id: 1,
+    id: 11,
     url: img1,
     title: "Facial Balancing Gel",
     price: "$45.00 - $99.00"
   },
   {
-    id: 2,
+    id: 12,
     url: img2,
     title: "Post-Shave Lotion",
     price: "$54.00"

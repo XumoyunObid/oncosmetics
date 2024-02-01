@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import "./product-item.css";
-import img1 from "../../../assets/product-img/up-icon.svg"
-import Cards from '../../about/components/cards/cards';
+import img1 from "../../../assets/product-img/up-icon.svg";
+import Cards from "../../about/components/cards/cards";
 import { Link } from "react-router-dom";
+import { data } from "../../../data/data";
+import FaqMailIcon from "../../../assets/icons/FaqMailIcon";
 
 export const Productitem = () => {
-    let [button, setButton] = useState(false)
+  let [button, setButton] = useState(false);
   return (
     <div className="product_items">
       <div className="containerlg">
@@ -94,23 +96,35 @@ export const Productitem = () => {
             </div>
           </div>
           <div className="product_info_block2">
-            <Link to="/products/1">
-              <Cards />
-            </Link>
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
+            {data.slice(0, 12).map((item) => {
+              return (
+                <Link key={item.id} to={`/products/${item.id}`}>
+                  {" "}
+                  <Cards
+                    id={item.id}
+                    img={item.url}
+                    title={item.title}
+                    price={item.price}
+                  />{" "}
+                </Link>
+              );
+            })}
           </div>
         </div>
+        <div className="faq-form">
+            <div className="faq-form-wrapper">
+              <FaqMailIcon />
+              <h1 className="faq-form-title">
+                Keep up to date with our advices
+              </h1>
+              <p className="faq-form-text">Subscribe now and thank us later</p>
+              <div className="faq-form-input">
+                <input type="text" name="" id="" />
+                <button>Subscribe</button>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   );
-}
+};

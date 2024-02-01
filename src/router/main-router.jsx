@@ -38,6 +38,6 @@ export const main_pages = [
   },
   {
     component: <ProductCart/>,
-    path: "products/:1",
+    path: "products/:id",
   }
 ];

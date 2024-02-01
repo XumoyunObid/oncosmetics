@@ -4,7 +4,6 @@ import { nanoid } from "nanoid";
 import { main_pages } from "./router/main-router";
 import { BlogsPage } from "./pages/blogs-page/blogsPage";
 
-// import { About } from "./pages/about";
 
 function App() {
   return (
