@@ -7,7 +7,7 @@ export const ProductCart = () => {
     const { id } = useParams();
     console.log(id);
 
-    const [number, setNumber] = useState(0)
+    const [number, setNumber] = useState(1)
     const [price, setPrice ] = useState(19)
 
     const plus = () => {
