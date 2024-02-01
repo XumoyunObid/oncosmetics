@@ -30,7 +30,7 @@ const Bestsellers = () => {
           })}
           <RightIcon />
         </div>
-        <button className="shopBtn">Shop All</button>
+        <Link to="/products" className="shopBtn">Shop All</Link>
       </div>
     </section>
   );

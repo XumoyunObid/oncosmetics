@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./banner.css"
 
 export const Banner = () => {
@@ -7,7 +8,7 @@ export const Banner = () => {
       <p className="banner-text">Free sample and free shipping when you spend $50</p>
       <div className="banner-btns">
         <button className="skincareBtn">Skincare</button>
-        <button className="shopBtn">Shop All</button>
+        <Link to="/products" className="shopBtn">Shop All</Link>
       </div>
     </div>
   </section>;
