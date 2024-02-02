@@ -4,6 +4,7 @@ import "./product-cart.css";
 import img2 from "../../../assets/product-img/Rectangle1.png";
 
 import { data } from "../../../data/data";
+import { toast } from "react-toastify";
 
 export const ProductCart = () => {
   const { id } = useParams();
@@ -14,14 +15,17 @@ export const ProductCart = () => {
   const [number, setNumber] = useState(1);
 
   const [price, setPrice] = useState(product.prices);
-  console.log(product.prices);
   const plus = () => {
-    setNumber(number + 1);
-    setPrice(price + product.prices);
+    if (number === 5) {
+      return toast("Maximal 5ta buyurtma bera olasiz", {type: "info", theme: "colored", position: "bottom-right"})
+    } else {
+      setNumber(number + 1);
+      setPrice(price + product.prices);
+    }
   };
 
   const minus = () => {
-    if (number <= 0 || price <= 0) return 0;
+    if (number <= 0 || price <= 0) return;
     else {
       setNumber(number - 1);
       setPrice(price - product.prices);
@@ -43,11 +47,9 @@ export const ProductCart = () => {
                 {/* <h3 className="product-cart-info_title">Eye Cream</h3>
                 <span className="cart_info-price">$ 25.00</span>
                 <span className="cart_info-newprice">$19.00</span> */}
-
                 <h3 className="product-cart-info_title">{product.title}</h3>
                 {/* <span className="cart_info-price">$ 25.00</span> */}
                 <span className="cart_info-newprice">{product.price}</span>
-
                 <p className="cart_info-text">
                   A potent anti-oxidant blend formulated with generous doses of
                   Vitamins C and E to gently nourish and protect the delicate
@@ -70,6 +72,8 @@ export const ProductCart = () => {
                   <button className="cart_info-add">Add to cart</button>
                 </div>
                 <small>${price}</small>
+               
+                  
                 <p className="cart_info-text">Tags:fragrance, skincare</p>
                 <h4>Description</h4>
                 <p className="cart_info-text">
