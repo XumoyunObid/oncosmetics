@@ -127,4 +127,15 @@
   font-weight: 500;
   line-height: 16.714px;
   letter-spacing: 0.411px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.info-cart-btn{
+  width: 108px;
+  height: 36px;
+  background-color: green;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 10px;
 }

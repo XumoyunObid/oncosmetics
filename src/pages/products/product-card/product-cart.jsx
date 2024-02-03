@@ -17,11 +17,37 @@ export const ProductCart = () => {
   const [price, setPrice] = useState(product.prices);
   const plus = () => {
     if (number === 5) {
-      return toast("Maximal 5ta buyurtma bera olasiz", {type: "info", theme: "colored", position: "bottom-right"})
+      return toast("Maximal 5ta buyurtma bera olasiz", {
+        type: "info",
+        theme: "colored",
+        position: "bottom-right",
+      });
     } else {
       setNumber(number + 1);
       setPrice(price + product.prices);
     }
+  };
+
+  const Buyurtma = () => {
+    if (price === 0)
+      return toast("Siz hali buyurtma bermadingiz", {
+        type: "error",
+        theme: "colored",
+        position: "bottom-right",
+      });
+    toast(`Buyurtma qabul qilindi. $${price} bo'ldi`, {
+      type: "success",
+      theme: "colored",
+      position: "bottom-right",
+    });
+  };
+
+  const Cart = () => {
+    return toast("Cart ish faoliyatida emas", {
+      theme: "colored",
+      type: "warning",
+      position: "bottom-right",
+    });
   };
 
   const minus = () => {
@@ -69,11 +95,15 @@ export const ProductCart = () => {
                       +
                     </button>
                   </div>
-                  <button className="cart_info-add">Add to cart</button>
+                  <button onClick={Cart} className="cart_info-add">
+                    Add to cart
+                  </button>
+                  <button onClick={Buyurtma} className="info-cart-btn">
+                    Buyurtma berish
+                  </button>
                 </div>
                 <small>${price}</small>
-               
-                  
+
                 <p className="cart_info-text">Tags:fragrance, skincare</p>
                 <h4>Description</h4>
                 <p className="cart_info-text">
